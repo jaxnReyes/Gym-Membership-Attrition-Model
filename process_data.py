@@ -75,7 +75,7 @@ class ProcessData:
             Y,
             test_size=0.2,
             stratify=Y,
-            random_state=42,
+            random_state=125,
         )
 
         from collections import Counter
@@ -83,7 +83,7 @@ class ProcessData:
         print(f"Training target class distribution: {Counter(Y_train)}")
 
         # implement SMOTE to balance churn ratio on training data only
-        smote = SMOTE(random_state=42)
+        smote = SMOTE(random_state=45)
         X_train_balanced, Y_train_balanced = smote.fit_resample(X_train, Y_train)
 
         print("\n=== AFTER SMOTE BALANCING ===")

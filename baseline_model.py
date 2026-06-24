@@ -6,7 +6,7 @@ class BaselineModel:
     # instantiate baseline model using all cpu cores available
     def __init__(self):
         self.model = RandomForestClassifier(
-            random_state=42,
+            random_state=45,
             n_jobs=-1
         )
 
@@ -17,7 +17,7 @@ class BaselineModel:
         # predict on test split
         y_pred = self.model.predict(X_test)
 
-        print("=== DEPLOYING UN-TUNED BASELINE MODEL ===")
+        print("=== DEPLOYING BASELINE MODEL ===")
         print(f"Baseline Accuracy: {accuracy_score(y_test, y_pred):.4f}\n")
         print("Baseline Classification Report:")
         print(classification_report(y_test, y_pred))
@@ -31,7 +31,8 @@ class BaselineModel:
             'Baseline_Importance': importances
         }).sort_values(by='Baseline_Importance', ascending=False)
 
-        print("=== BASELINE FEATURE IMPORTANCE RANKINGS ===")
+        print("=== BASELINE FEATURE IMPORTANCE ===")
         print(importance_df.to_string(index=False))
+        print("\n")
 
         return importance_df
