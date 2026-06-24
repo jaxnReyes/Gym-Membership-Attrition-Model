@@ -88,6 +88,6 @@ class ProcessData:
 
         print("\n=== AFTER SMOTE BALANCING ===")
         print(f"Balanced Training target class distribution: {Counter(Y_train_balanced)}")
-        print(f"Final training features matrix shape: {X_train_balanced.shape}")
+        print(f"Final training features matrix shape: {X_train_balanced.shape}\n")
 
-        return X_train_balanced, X_test, Y_train_balanced, Y_test
+        return X_train_balanced, Y_train_balanced, X_test, Y_test
