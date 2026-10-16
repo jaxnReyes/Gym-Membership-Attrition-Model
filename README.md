@@ -1,15 +1,3 @@
-<strong> **DO NOT DISTRIBUTE OR PUBLICLY POST SOLUTIONS TO THESE LABS. MAKE ALL FORKS OF THIS REPOSITORY WITH SOLUTION CODE PRIVATE. PLEASE REFER TO THE STUDENT CODE OF CONDUCT AND ETHICAL EXPECTATIONS FOR COLLEGE OF INFORMATION TECHNOLOGY STUDENTS FOR SPECIFICS. ** </strong>
-
-# WESTERN GOVERNORS UNIVERSITY
-
-## D683 – ADVANCED AI AND ML
-
-Welcome to Advanced AI and ML!
-
-For specific task instructions and requirements for this assessment, please refer to the course page.
-
-######
-
 # Gym Membership Attrition Prediction
 
 This advanced machine learning pipeline is designed to predict gym membership churn risk using behavioral, physical, and contract-based member data. This project is built using a regularized Random Forest Binary Classifier and optimized for high-sensitivity recall to minimize non-detection of at-risk members.
